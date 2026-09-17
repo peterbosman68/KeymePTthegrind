@@ -35,3 +35,14 @@ menuToggle.addEventListener('click', () => {
   menuToggle.setAttribute('aria-expanded', String(!isOpen));
   nav.classList.toggle('is-open', !isOpen);
 });
+
+const heroStage = document.querySelector('#hero-stage');
+const heroVideo = document.querySelector('.hero-video');
+
+window.setTimeout(() => {
+  heroStage.classList.add('is-expanded');
+}, 2800);
+
+heroVideo.addEventListener('error', () => {
+  heroStage.classList.add('video-unavailable');
+});
