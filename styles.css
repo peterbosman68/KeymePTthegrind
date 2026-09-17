@@ -22,8 +22,8 @@
 	overflow: hidden;
 	background: var(--orange);
 	inset: 50% auto auto 50%;
-	width: min(22vw, 180px);
-	height: min(14vh, 100px);
+	width: min(9vw, 120px);
+	height: min(8vh, 75px);
 	border-radius: 8px;
 	transform: translate(-50%, -50%);
 	opacity: 0;
