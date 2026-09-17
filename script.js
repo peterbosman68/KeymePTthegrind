@@ -40,8 +40,14 @@ const heroStage = document.querySelector('#hero-stage');
 const heroVideo = document.querySelector('.hero-video');
 
 window.setTimeout(() => {
+  heroStage.classList.remove('is-blank');
+  heroStage.classList.add('video-started');
+  heroVideo.play().catch(() => {});
+}, 1800);
+
+window.setTimeout(() => {
   heroStage.classList.add('is-expanded');
-}, 2800);
+}, 4200);
 
 heroVideo.addEventListener('error', () => {
   heroStage.classList.add('video-unavailable');
